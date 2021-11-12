@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_one"
+        android:orderInCategory="1"
+        android:title="1 Day" />
+    <item android:id="@+id/menu_seven"
+        android:orderInCategory="1"
+        android:title="7 Days" />
+    <item android:id="@+id/menu_thirty"
+        android:orderInCategory="1"
+        android:title="30 Days" />
+</menu>

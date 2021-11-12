@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools2="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/space_normal">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="@dimen/thumbnail_size"
+        android:layout_height="@dimen/thumbnail_size"
+        android:id="@+id/thumbnail"
+        app:shapeAppearanceOverlay="@style/circular"
+        app:strokeWidth="2dp"
+        android:padding="1dp"
+        app:strokeColor="#00A8AE"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:layout_marginStart="@dimen/space_short"
+        android:layout_marginEnd="@dimen/space_short"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:maxLines="2"
+        android:ellipsize="end"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/thumbnail"
+        app:layout_constraintEnd_toStartOf="@id/redirect"
+        tools2:text="hasdasda dsfdgsd sdf sgdfgsdgf sdgsd gdsf ds sdf sdf sdfsdf sdf dssd"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:layout_marginStart="@dimen/space_short"
+        android:layout_marginEnd="@dimen/space_short"
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray"
+        android:maxLines="2"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintStart_toEndOf="@id/thumbnail"
+        app:layout_constraintEnd_toStartOf="@id/redirect"
+        tools2:text="hasdasdasd dsf dsf sdf sd sdf sdf sdf sdf dsfsdfd"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/date"
+        android:layout_marginStart="@dimen/space_short"
+        android:layout_marginEnd="@dimen/space_short"
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintEnd_toStartOf="@id/redirect"
+        tools2:text="20-02-2021"
+        app:drawableStartCompat="@drawable/ic_date_range"
+        android:drawablePadding="@dimen/space_tiny"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/redirect"
+        android:src="@drawable/ic_arrow_forward"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools2:ignore="ContentDescription" />
+</androidx.constraintlayout.widget.ConstraintLayout>

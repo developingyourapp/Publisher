@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="space_tiny">4dp</dimen>
+    <dimen name="space_short">8dp</dimen>
+    <dimen name="space_small">12dp</dimen>
+    <dimen name="space_normal">16dp</dimen>
+    <dimen name="thumbnail_size">60dp</dimen>
+</resources>
