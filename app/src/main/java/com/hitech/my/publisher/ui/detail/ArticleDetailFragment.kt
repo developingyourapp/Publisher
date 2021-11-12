@@ -16,7 +16,6 @@ class ArticleDetailFragment : Fragment() {
     ): View {
         val binding = FragmentArticleDetailBinding.inflate(inflater, container, false)
         val url = arguments?.let { ArticleDetailFragmentArgs.fromBundle(it).detailUrl }
-        Toast.makeText(requireContext(), url, Toast.LENGTH_SHORT).show()
         with(binding) {
             webView.settings.javaScriptEnabled = true
             url?.let { webView.loadUrl(url) }

@@ -47,7 +47,6 @@ class ArticleRecyclerViewAdapter(val callback: (String) -> Unit) : RecyclerView.
                name.text = article.byline
                Glide.with(thumbnail.context).load(article.thumbnailUrl).into(thumbnail)
                binding.root.setOnClickListener {
-                   Toast.makeText(binding.root.context,"click on item", Toast.LENGTH_SHORT).show()
                    callback.invoke(article.url)
                }
            }
